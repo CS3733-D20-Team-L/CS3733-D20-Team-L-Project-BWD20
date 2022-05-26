@@ -27,9 +27,12 @@ import java.util.regex.Pattern;
 
 @Slf4j
 public class MessengerService extends Service implements IMessengerService {
-	protected static final String ACCOUNT_SID = "AC84c0ccf3e6eb023f08553134bda07064";
-	protected static final String AUTH_TOKEN = "1b1e9007a74876dade4fcb0c81adc8c8";
-	protected static final String API_KEY = "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";
+	// Note that the messaging service API constants have been removed from this file so that they are not exposed to the public
+	// Because of this the messaging services will not function properly unless they are replaced
+
+	protected static final String ACCOUNT_SID = "SID_GOES_HERE";
+	protected static final String AUTH_TOKEN = "TOKEN_GOES_HERE";
+	protected static final String API_KEY = "KEY_GOES_HERE";
 	protected static final PhoneNumber SENDER_PHONE_NUMBER = new PhoneNumber("+17692275167");
 	protected static final Email SENDER_EMAIL = new Email("bwhmappath@gmail.com");
 	protected static final String SUBJECT = "Brigham and Women's Hospital Directions";

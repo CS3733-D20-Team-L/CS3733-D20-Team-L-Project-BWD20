@@ -12,6 +12,7 @@ import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Objects;
 
 @Slf4j
 public class SpeechFileManager {
@@ -40,7 +41,8 @@ public class SpeechFileManager {
 
 	private void generateCredentials() {
 		try {
-			credentials = ServiceAccountCredentials.fromStream(getClass().getResourceAsStream("/edu/wpi/cs3733/d20/teamL/auth/gcloud-auth.json"));
+			// This file has been removed so that the credentials
+			credentials = ServiceAccountCredentials.fromStream(Objects.requireNonNull(getClass().getResourceAsStream("PATH/TO/CREDENTIALS_GOES_HERE")));
 		} catch (IOException ex) {
 			log.error("Encountered IOException.", ex);
 		}

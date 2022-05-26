@@ -4,18 +4,21 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class DBConstants {
+	// Note that the database connection constants have been removed from this file so that they are not exposed to the public
+	// Because of this the entire application will not function properly unless they are replaced
+
 	static final String DB_DRIVER = "com.mysql.cj.jdbc.Driver";
 	static final String DB_PREFIX = "jdbc:mysql://";
-	static final String DB_URL = "cs3733-bwh-db.cqqsqwjmcbj4.us-east-2.rds.amazonaws.com";
-	static final String DB_PORT = ":5008";
+	static final String DB_URL = "URL_GOES_HERE";
+	static final String DB_PORT = ":PORT_GOES_HERE";
 	// Development database
 	static final String DB_NAME_DEV = "/bwh_dev";
 	// Production database
 	static final String DB_NAME_PROD = "/bwh_prod";
 	// Bleeding-edge 'canary' database
 	static final String DB_NAME_CANARY = "/bwh_canary";
-	static final String DB_USER = "teaml";
-	static final String DB_PASSWORD = "linenleviathans";
+	static final String DB_USER = "USER_GOES_HERE";
+	static final String DB_PASSWORD = "PASSWORD_GOES_HERE";
 	public static final String SERVICE_NAME = "mysql-db-01";
 
 	public static ArrayList<String> GET_TABLE_NAMES() {

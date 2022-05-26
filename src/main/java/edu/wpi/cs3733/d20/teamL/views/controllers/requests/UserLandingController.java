@@ -2,14 +2,14 @@ package edu.wpi.cs3733.d20.teamL.views.controllers.requests;
 
 import com.jfoenix.controls.JFXButton;
 //import edu.wpi.cs3733.c20.teamR.AppointmentRequest;
-import edu.wpi.cs3733.d20.teamE.onCallBeds;
+//import edu.wpi.cs3733.d20.teamE.onCallBeds;
 import edu.wpi.cs3733.d20.teamL.services.users.ILoginManager;
 import edu.wpi.cs3733.d20.teamL.util.FXMLLoaderFactory;
-import edu.wpi.cs3733.d20.teamM.AudioVisualRequest;
-import edu.wpi.cs3733.d20.teamM.ServiceException;
-import edu.wpi.cs3733.d20.teamP.APIController;
-import flowerapi.FlowerAPI;
-import javafx.application.Platform;
+//import edu.wpi.cs3733.d20.teamM.AudioVisualRequest;
+//import edu.wpi.cs3733.d20.teamM.ServiceException;
+//import edu.wpi.cs3733.d20.teamP.APIController;
+//import flowerapi.FlowerAPI;
+//import javafx.application.Platform;
 import edu.wpi.cs3733.d20.teamL.util.TimerManager;
 import javafx.fxml.FXML;
 import javafx.scene.Parent;
@@ -56,19 +56,20 @@ public class UserLandingController {
     }
 
     @FXML
-    public void launchGiftAPI() throws IOException, edu.wpi.cs3733.d20.teamP.ServiceException {
-       APIController.run(0, 0, 1280, 720, "edu/wpi/cs3733/d20/teamL/css/GlobalStyleSheet.css", new String(), new String());
+    public void launchGiftAPI() throws IOException/*, edu.wpi.cs3733.d20.teamP.ServiceException*/ {
+       //APIController.run(0, 0, 1280, 720, "edu/wpi/cs3733/d20/teamL/css/GlobalStyleSheet.css", new String(), new String());
     }
 
     @FXML
-    public void launchMaintenanceAPI() throws IOException, ServiceException {
-        AudioVisualRequest.run(0, 0, 1280, 720, "edu/wpi/cs3733/d20/teamL/css/GlobalStyleSheet.css", new String(), new String());
+    public void launchMaintenanceAPI() throws IOException/*, ServiceException*/ {
+        //AudioVisualRequest.run(0, 0, 1280, 720, "edu/wpi/cs3733/d20/teamL/css/GlobalStyleSheet.css", new String(), new String());
 
     }
 
 
     @FXML
-    public void launchExternalAPI() throws IOException, flowerapi.ServiceException { FlowerAPI.run(0, 0, 1280, 720, "edu/wpi/cs3733/d20/teamL/css/GlobalStyleSheet.css", new String(), new String());
+    public void launchExternalAPI() throws IOException/*, flowerapi.ServiceException*/ {
+		//FlowerAPI.run(0, 0, 1280, 720, "edu/wpi/cs3733/d20/teamL/css/GlobalStyleSheet.css", new String(), new String());
     }
 
     @FXML
